@@ -37,25 +37,13 @@ pnpm run dev
 │   │   └── SideBar.astro
 │   │   └── SideBarMenu.astro
 │   │   └── SideBarFooter.astro
-│   ├── content/
-│   │   ├── blog/
-│   │   │   ├── post1.md
-│   │   │   ├── post2.md
-│   │   │   └── post3.md
-│   │   ├── store/
-│   │   │   ├── item1.md
-│   │   │   ├── item2.md
 │   ├── layouts/
 │   │   └── BaseLayout.astro
 │   │   └── PostLayout.astro
 │   └── pages/
-│   │   ├── blog/
-│   │   │   ├── [...page].astro
-│   │   │   ├── [slug].astro
 │   │   └── cv.astro
 │   │   └── index.astro
 │   │   └── projects.astro
-│   │   └── rss.xml.js
 │   ├── styles/
 │   │   └── global.css
 │   └── config.ts
