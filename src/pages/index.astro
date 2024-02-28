@@ -1,14 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -74,6 +67,7 @@ const last_posts = posts.slice(0, 3);
     img="/fila.webp"
     desc="Queue management system that shows your queue position in realtime. Made with Angular, NodeJS and Firebase."
     url="https://filaonlineapp.com.br"
+    target="_blank"
   />
   <div class="divider my-0"></div>
   <!-- <HorizontalCard
@@ -88,6 +82,7 @@ const last_posts = posts.slice(0, 3);
     img="/agenda.webp"
     desc="Complete scheduling app that includes user booking by link. Made with Vue, NodeJS and Supabase."
     url="https://onlineagenda.com.br"
+    target="_blank"
     badge="NEW"
   />
   <div class="divider my-0"></div>
@@ -95,7 +90,8 @@ const last_posts = posts.slice(0, 3);
     title="Pager Online"
     img="/pager.webp"
     desc="Pager app for food halls and fast food. Notifies the user when the order is ready. Made with React, NodeJS and SurrealDB."
-    url="#"
+    url="https://pageronline.com.br"
+    target="_blank"
     badge="NEW"
   />
 
