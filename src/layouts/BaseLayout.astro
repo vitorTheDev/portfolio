@@ -5,7 +5,11 @@ import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
-import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  TRANSITION_API,
+} from "../config";
 
 const {
   image,
@@ -20,7 +24,12 @@ const {
 <!doctype html>
 <html lang="en" data-theme="lofi">
   <head>
-    <BaseHead title={title} description={description} image={image} , ogType={ogType} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      ogType={ogType}
+    />
     {TRANSITION_API && <ViewTransitions />}
   </head>
   <body>
@@ -37,5 +46,13 @@ const {
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
     </div>
+    <script>
+      let theme = "lofi";
+      const savedTheme = localStorage.getItem('THEME');
+      if (savedTheme) {
+        theme = savedTheme;
+      }
+      document.querySelector('html')!.setAttribute('data-theme', theme);
+    </script>
   </body>
 </html>
