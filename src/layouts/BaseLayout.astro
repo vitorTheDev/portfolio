@@ -51,6 +51,9 @@ const {
       const savedTheme = localStorage.getItem('THEME');
       if (savedTheme) {
         theme = savedTheme;
+      } else {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark' : 'lofi';
       }
       document.querySelector('html')!.setAttribute('data-theme', theme);
     </script>
