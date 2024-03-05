@@ -10,7 +10,7 @@ const toggleTheme = () => {
 </script>
 
 <template>
-  <label class="swap swap-rotate mt-3 mr-3">
+  <label class="swap swap-rotate">
 
     <!-- this hidden checkbox controls the state -->
     <input type="checkbox" :checked="theme === 'lofi'" @click="toggleTheme" />

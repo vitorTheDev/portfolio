@@ -2,6 +2,10 @@
 import SideBarFooter from "./SideBarFooter.astro";
 import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
+import {getLangFromUrl, useTranslations} from './../i18n/utils.ts';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const { sideBarActiveItemID } = Astro.props;
 ---
 

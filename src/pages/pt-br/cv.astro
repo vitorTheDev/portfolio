@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TimeLineElement from "../../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Perfil</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Sou um desenvolvedor apaixonado por aprender e codar, com 8 anos de experiência, sendo 5 anos
+    focados em desenvolvimento fullstack com Typescript.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experiência</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Desenvolvedor júnior na Globalsoft"
+      subtitle="De 01/06/2015 até 31/05/2016 na Globalsoft, Araçatuba, Brazil"
+    >
+      Eu iniciei minha carreira na Globalsoft, uma companhia que provê o GS Gestor,
+      um ERP completo para negócios locais.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Desenvolvedor Sênior na IBL"
+      subtitle="De 01/06/2016 até a data atual na IBL, Araçatuba, Brazil"
+    >
+      Eu comecei a trabalhar na IBL tempos atrás como um desenvolvedor júnior, mas eu aprendi muito
+      desde então e agora sou um Engenheiro de software sênior.
+      Veja meus <b><i><a href="/pt-br/projects">projetos</a></i></b>.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certificações</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      Domine o Javascript (Udemy)
+    </li>
+    <li>
+      Aplicações Web com Angular 4 (Udemy)
+    </li>
+    <li>
+      Javascript do Futuro - ES6/7/Webpack2/Typescript (Udemy)
+    </li>
+    <li>
+      ES6 Javascript: The Complete Developer's Guide (Udemy)
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Habilidades</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>NodeJS</li>
+    <li>Typescript</li>
+    <li>Angular</li>
+    <li>Vue</li>
+    <li>React</li>
+    <li>TailwindCSS</li>
+    <li>REST</li>
+    <li>GraphQL</li>
+    <li>SQL</li>
+    <li>Firebase</li>
+    <li>MongoDB</li>
+    <li>PostgresSQL</li>
+    <li>Supabase</li>
+    <li>SurrealDB</li>
+  </ul>
+</BaseLayout>

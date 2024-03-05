@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-1">
+    <div class="text-xl py-1">Olá 👋</div>
+    <div class="text-5xl font-bold">Sou Vítor Barbieri</div>
+    <div class="text-3xl py-3 font-bold">Engenheiro de Software</div>
+    <div class="py-2">
+      <text class="text-lg">
+        Tenho trabalhado como um desenvolvedor profissional <b>a mais de 8 anos</b>.
+        Eu tenho mais de <b>5 anos</b> de experiência com <b>Angular</b>/<b>Vue</b>/<b>React</b>
+        e <b>Node.js</b>, também com vasta experiência com <b>SQL</b>/<b>NoSQL</b> e serviços em
+        nuvem como <b>AWS/GCP</b>.
+        Meu ponto mais forte é a versatilidade: tenho profundos conhecimentos de tecnologias
+        front-end e back-end, estando apto a trabalhar em qualquer parte de qualquer projeto com
+        facilidade.
+      </text>
+      <p class="text-lg">
+        Atualmente estou procurando por oportunidades de trabalho <b>freelance</b> e <b>meio período</b>.
+      </p>
+      <div class="mt-6">
+        <p class="mt-2">
+          <img
+            src="https://skillicons.dev/icons?i=js,ts,nodejs,c,cpp"
+            alt="languages and frameworks"
+          />
+        </p>
+
+        <p class="mt-2">
+          <img
+            src="https://skillicons.dev/icons?i=aws,gcp,express,graphql,apollo,postgresql,mysql,mongodb,firebase,supabase"
+            alt="languages and frameworks"
+          />
+        </p>
+
+        <p class="mt-2">
+          <img
+            src="https://skillicons.dev/icons?i=html,css,angular,vue,react,flutter,tailwind,sass,"
+            alt="languages and frameworks"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.linkedin.com/in/vitorthedev/" target="_blank">
+        Vamos conversar!</a
+      >
+      <!-- <a
+        href="https://github.com/manuelernestog/astrofy"
+        target="_blank"
+        class="btn btn-outline ml-5"
+      >
+        Get This template
+      </a> -->
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Meus últimos projetos {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Fila Online"
+    img="/fila.webp"
+    desc="Sistema de controle de filas que mostra a posição em tempo real. Feito com Angular, Node.js e Firebase."
+    url="https://filaonlineapp.com.br"
+    target="_blank"
+  />
+  <div class="divider my-0"></div>
+  <!-- <HorizontalCard
+    title="Tkron"
+    img="/tkron.webp"
+    desc="Complete clothing industry management app and dashboard. Has production control, chronometry and human resources. Made with Angular, NodeJS and Firebase."
+    url="https://www.tkron.net"
+  /> -->
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Agenda Online"
+    img="/agenda.webp"
+    desc="App completo de agendamento que inclui agendamento por link. Feito com Vue, NodeJS e Supabase."
+    url="https://onlineagenda.com.br"
+    target="_blank"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Pager Online"
+    img="/pager.webp"
+    desc="App de pager para fast-foods e áreas de alimentação. Notifica o usuário quando seu pedido estiver pronto. Feito com React, NodeJS e SurrealDB."
+    url="https://pageronline.com.br"
+    target="_blank"
+    badge="NEW"
+  />
+
+
+</BaseLayout>
